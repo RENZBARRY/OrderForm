@@ -1,0 +1,353 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Renz Barry Vergara">
+    <link rel="stylesheet" href="VERGARA_pizzaOrderForm_ITAD.css">
+    <title>Customer Information</title>
+</head>
+<style>
+</style>
+<body>
+    <section class="center">
+        <form action="/action_page.php" method="post">
+          <fieldset>
+            <p style="font-size: 2em; color: black; font-family: 'Tahoma';border: 1px solid black; padding: 10px; border-radius: 5px ;background-color: rgb(198, 225, 245);
+            box-shadow: 1px 1px 2px 2px ;">Customer Information</p>
+    <form action=" " method="GET" enctype="multipart/form-data">
+        <div>
+          <label for="name" style="margin-right:50px;">Full Name:</label>
+          <input type="text" name="name" id="name" placeholder="Please enter your Full Name" required>
+      </div>
+      <div>
+        <label for="address">Complete Address:</label>
+        <input type="text" name="address" id="address" placeholder="Please enter your complete address" required>
+      </div>
+      <div>
+        <label for="contact" style="margin-right: 80px;margin-left: 3px;">Contact Number:</label>
+        <input type="tel" name="contact" id="address" placeholder="Please enter your phone number" required>
+      </div>
+      <div>
+        <label for="email" style="margin-left: 1px;">Email Address: </label>
+        <input type="email" name="email" id="email" placeholder="Please enter your e-mail" required>
+      </div>
+
+        <label for="bio" style="margin-left: 22px;float: left;">Description of how to get to the place</label>
+        
+        <textarea id="bio" name="bio" placeholder="Enter the exact location here" style="resize:none; width: 5em; height: 1em;"></textarea>
+      </div>
+      <br>
+            <p style="font-size: 2em; color: black; font-family: 'Tahoma';border: 1px solid black; padding: 10px; border-radius: 5px ;background-color: rgb(198, 225, 245);
+            box-shadow: 1px 1px 2px 2px;" id="top">Order Form</p>
+    <form action="/action_page.php" method="GET" enctype="multipart/form-data">
+        <div>
+            <p style="text-align: center; margin-left: 101px; margin-right: 100px;">
+                Click on the picture of the food that you want to order
+            </p>
+        </div><br><br>
+        <div class="burger">
+            <a href="#burger">
+                <figure><img src="VERGARA_IMAGES_ITAD/burger.png" alt="Burger" title="Burger">
+                    <figcaption>Burger</figcaption>
+            </figure></a>
+        </div>
+        <div class="pasta">
+            <a href="#pasta">
+                <figure><img src="VERGARA_IMAGES_ITAD/pasta.png" alt="Pasta" title="pasta">
+                <figcaption>Pasta</figcaption>
+            </figure></a>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="fries">
+            <a href="#fries">
+                <figure><img src="VERGARA_IMAGES_ITAD/fries.png" alt="Fries" title="Fries">
+                <figcaption>Fries</figcaption>
+            </figure></a>
+        </div>
+        <div class="drinks">
+            <a href="#drinks">
+                <figure><img src="VERGARA_IMAGES_ITAD/drinks.png" alt="Drinks" title="Drinks">
+                <figcaption>Drinks</figcaption>
+            </figure></a>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="burger1" id="burger">
+                <figure><img src="VERGARA_IMAGES_ITAD/burger.png" alt="Burger" title="Burger">
+                    <figcaption>Burger</figcaption>
+            </figure>
+        </div><br><br><br><br><br><br>
+        <hr width ="100%" size ="4" color="white">
+        <br>
+        <div>
+            <label for="number" style="float: left; margin-right: 20px; font-size: 1.2em; font-weight: bolder;">No. of Patty:</label>
+        </div>
+        <div>
+            <figure><img src="VERGARA_IMAGES_ITAD/single.png">
+                <figcaption style="margin-top: -4em; float: left;"><input type="radio" name="single" id="single">
+                    <label for="single">Single Patty</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/double.png">
+                <figcaption style="margin-top: -4em; float: left;"><input type="radio" name="double" id="double">
+                    <label for="double">Double Patty</label></figcaption>
+            </figure>
+        </div>
+        <div>
+            <label for="number" style="float: left; margin-right: 1px; font-size: 1.2em; font-weight: bolder;margin-bottom: 1px; margin-top: -40px;">Adds On:</label>
+        </div>
+        <div>
+            <input type="checkbox" name="cheese" id="cheese">
+                    <label for="cheese">Cheese</label>
+            <input type="checkbox" name="coleslaw" id="coleslaw">
+                    <label for="coleslaw">Coleslaw</label>
+            <input type="checkbox" name="tomato" id="tomato">
+                    <label for="tomato">Tomato</label>
+            <input type="checkbox" name="onion" id="onion">
+                    <label for="onion">Onion</label>
+            <input type="checkbox" name="cucumber" id="cucumber">
+                    <label for="cucumber">Cucumber</label>
+            <input type="checkbox" name="bacon" id="bacon">
+                    <label for="bacon">Bacon</label>
+        </div>
+        <div>
+            <label for="number" style="float: left; margin-right: 20px; font-size: 1.2em; font-weight: bolder;">Choose of Buns:</label>
+        </div>
+        <div>
+            <figure><img src="VERGARA_IMAGES_ITAD/white.png" style="width: 120px;height: 120px; margin-top: -1em;">
+                <figcaption style="margin-top: -4em; float: left; margin-left: -10px;"><input type="radio" name="white" id="white">
+                    <label for="white">White</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/wheat.png">
+                <figcaption style="margin-top: -4em; float: left;"><input type="radio" name="wheat" id="wheat">
+                    <label for="wheat">Wheat</label></figcaption>
+            </figure>
+        </div>
+        <div style="float:left;margin-top: -60px;">
+            <label for="quantity" style="float: left;margin-right: 10px;font-weight: bolder;font-size: 1.2em;">Quantity</label>
+            <select name="quantity" id="quantity" style="padding: 4px;margin-bottom: 70px;">
+                <option value="one">1</option>
+                <option label="two" value="2">2</option>
+                <option label="three" value="3">3</option>
+                <option label="four" value="4">4</option>
+                <option label="five" value="5">5</option>
+                <option label="six" value="6">6</option>
+                <option label="seven" value="7">7</option>
+                <option label="eight" value="8">8</option>
+                <option label="nine" value="9">9</option>
+            </select>
+          </div><br><br><br><br><br><br><br><br><br><br>
+          <a href="#top">
+          <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-bottom: 80px; float: left;">Add more foods</p></a>
+        <div>
+            <a href="#checkout">
+            <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-left: 50px; float: left;">Check out</p></a>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="burger1" id="pasta">
+                <figure><img src="VERGARA_IMAGES_ITAD/pasta.png" alt="Burger" title="Burger">
+                    <figcaption>Pasta</figcaption>
+            </figure>
+        </div><br><br><br><br><br><br>
+        <hr width ="100%" size ="4" color="white">
+        <br><br>
+        <div>
+            <label for="number" style="float: left; margin-right: 40px; font-size: 1em; font-weight: bolder;font-size: 1.2em;">Select sauce:</label>
+        </div><br><br>
+        <div>
+            <figure><img src="VERGARA_IMAGES_ITAD/carbonara.png" style="border: 1px solid black;border-radius: 60px;margin-left: 120px;">
+                <figcaption style="float: left;margin-left: -3px; margin-top: -45px;"><input type="radio" name="Carbonara" id="Carbonara">
+                    <label for="Carbonara">Carbonara</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/spaghetti.png" style="margin-left:0;width: 110px;height: 110px;margin-top: -20px;">
+                <figcaption style="float: left;margin-left: -10px; margin-top: -45px;"><input type="radio" name="Spaghetti" id="Spaghetti">
+                    <label for="Spaghetti">Spaghetti</label></figcaption>
+            </figure><br>
+            <figure><img src="VERGARA_IMAGES_ITAD/agnolotti.png" style="border: 1px solid rgb(217, 244, 255);border-radius: 300px;margin-top: -100px;margin-left: 30px;">
+                <figcaption style="float: left;margin-top: -140px;margin-left: 105px;"><input type="radio" name="Agnolotti" id="Agnolotti">
+                    <label for="Agnolotti">Agnolotti</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/pesto.png" style="border: 1px solid black;border-radius: 60px; margin-top: -100px;margin-left: -90px;">
+                <figcaption style="float: left;margin-top: -140px;margin-left: -10px;"><input type="radio" name="pesto" id="pesto">
+                    <label for="pesto">Pesto</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/ziti macaroni.png" style=" margin-top: -100px;margin-left: -10px;margin-right: -100px;">
+                <figcaption style="float: right;margin-top: -140px;margin-left: 55px;margin-right: -55px;"><input type="radio" name="Macaroni" id="Macaroni">
+                    <label for="Macaroni">Ziti Macaroni</label></figcaption>
+            </figure>
+        </div>
+        <div style="float:left;margin-top: -60px;">
+            <label for="pasta" style="float: left;margin-right: 10px;font-weight: bolder;font-size: 1.2em;">Pasta per box:</label>
+            <select name="quantity" id="quantity" style="padding: 4px;margin-bottom: 70px;">
+              <option value="one">1</option>
+              <option label="two" value="2">2</option>
+              <option label="three" value="3">3</option>
+              <option label="four" value="4">4</option>
+              <option label="five" value="5">5</option>
+              <option label="six" value="6">6</option>
+              <option label="seven" value="7">7</option>
+              <option label="eight" value="8">8</option>
+              <option label="nine" value="9">9</option>
+            </select>
+          </div><br><br><br><br><br><br><br><br><br><br>
+          <a href="#top">
+          <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-bottom: 80px; float: left;">Add more foods</p></a>
+        <div>
+            <a href="#checkout">
+            <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-left: 50px; float: left;">Check out</p></a>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="burger1" id="fries">
+                <figure><img src="VERGARA_IMAGES_ITAD/fries.png" alt="Fries" title="Fries">
+                    <figcaption>Fries</figcaption>
+            </figure>
+        </div><br><br><br><br><br><br>
+        <hr width ="100%" size ="4" color="white">
+        <br><br>
+        <div>
+            <label for="number" style="float: left; margin-right: 40px; font-size: 1em; font-weight: bolder;font-size: 1.2em;">Size:</label>
+        </div><br><br><br><br><br><br><br>
+        <div>
+            <figure><img src="VERGARA_IMAGES_ITAD/small.png" style="margin-top: -100px;margin-left: 25px;width: 100px;">
+                <figcaption style="float: left;margin-top: -140px;margin-left: 95px; margin-bottom: -100px;"><input type="radio" name="Small" id="Small">
+                    <label for="Small">Small</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/medium.png" style=" margin-top: -100px;margin-left: -70px;">
+                <figcaption style="float: left;margin-top: -140px;margin-left: -10px;margin-bottom: -100px;"><input type="radio" name="Medium" id="Medium">
+                    <label for="Medium">Medium</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/medium.png" style=" margin-top: -100px;margin-left: -15px;width: 120px;margin-right: -140px;">
+                <figcaption style="float: right;margin-top: -140px;margin-left: 65px;margin-bottom: -100px;margin-right: -140px;"><input type="radio" name="Large" id="Large">
+                    <label for="Large">Large</label></figcaption>
+            </figure>
+        </div>
+        <div>
+            <label for="number" style="float: left; margin-left: -350px;margin-right: 100px; font-size: 1em; font-weight: bolder;margin-bottom: 1px; margin-top: 75px;font-size: 1.2em;">Flavor:</label>
+        </div><br><br><br><br>
+        <div>
+            <input type="checkbox" name="Cheese" id="Cheese">
+                    <label for="Cheese">Cheese</label>
+            <input type="checkbox" name="bbq" id="bbq">
+                    <label for="bbq">BBQ</label>
+            <input type="checkbox" name="sour cream" id="sour cream">
+                    <label for="sour cream">Sour Cream</label>
+        </div><br><br>
+        <div style="float:left;margin-top: -60px;">
+            <label for="quantity" style="float: left;margin-right: 10px;font-weight: bolder;font-size: 1.2em;">Fries per pack:</label>
+            <select name="quantity" id="quantity" style="padding: 4px;margin-bottom: 70px;">
+                <option value="one">1</option>
+                <option label="two" value="2">2</option>
+                <option label="three" value="3">3</option>
+                <option label="four" value="4">4</option>
+                <option label="five" value="5">5</option>
+                <option label="six" value="6">6</option>
+                <option label="seven" value="7">7</option>
+                <option label="eight" value="8">8</option>
+                <option label="nine" value="9">9</option>
+              </select>
+            </div><br>
+          <a href="#top">
+          <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-bottom: 80px; float: left;">Add more foods</p></a>
+        <div>
+            <a href="#checkout">
+            <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-left: 50px; float: left;">Check out</p></a>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="burger1" id="drinks">
+                <figure><img src="VERGARA_IMAGES_ITAD/drinks.png" alt="Drinks" title="Drinks">
+                    <figcaption>Drinks</figcaption>
+            </figure>
+        </div><br><br><br><br><br><br>
+        <hr width ="100%" size ="4" color="white">
+        <br><br>
+        <div>
+            <label for="number" style="float: left; margin-right: 40px; font-size: 1em; font-weight: bolder;font-size: 1.2em;">Kind of Drinks:</label>
+        </div><br><br><br><br><br><br><br>
+        <div>
+            <figure><img src="VERGARA_IMAGES_ITAD/coke.png" style="margin-top: -110px;margin-left: 25px;width: 100px;height: 100px;">
+                <figcaption style="float: left;margin-top: -140px;margin-left: 105px; margin-bottom: -100px;"><input type="radio" name="Coke" id="Coke">
+                    <label for="Coke">Coke</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/royal.webp" style=" margin-top: -100px;margin-left: -90px;">
+                <figcaption style="float: left;margin-top: -140px;margin-left: -5px;margin-bottom: -100px;"><input type="radio" name="Royal" id="Royal">
+                    <label for="Royal">Royal</label></figcaption>
+            </figure>
+            <figure><img src="VERGARA_IMAGES_ITAD/sprite.png" style=" margin-top: -100px;margin-right: -140px;">
+                <figcaption style="float: right;margin-top: -140px;margin-left: 65px;margin-bottom: -100px;margin-right: -140px;"><input type="radio" name="Sprite" id="Sprite">
+                    <label for="Sprite">Sprite</label></figcaption>
+            </figure>
+        </div>
+        <div>
+            <label for="number" style="float: left; margin-left: -400px;margin-right: 100px; font-size: 1em; font-weight: bolder;margin-bottom: 1px; margin-top: 70px;font-size: 1.2em;">Sizes:</label>
+        </div><br><br><br><br>
+        <div>
+            <input type="checkbox" name="250mL" id="250mL">
+                    <label for="250mL">250mL</label>
+            <input type="checkbox" name="330mL" id="330mL">
+                    <label for="330mL">330mL</label>
+            <input type="checkbox" name="500mL" id="500mL">
+                    <label for="500mL">500mL</label>
+            <input type="checkbox" name="1L" id="1L">
+                    <label for="1L">1L</label>
+            <input type="checkbox" name="1.5L" id="1.5L">
+                    <label for="1.5L">1.5L</label>   
+            <input type="checkbox" name="2L" id="2L">
+                    <label for="2L">2L</label>   
+        </div><br><br>
+        <div style="float:left;margin-top: -60px;">
+            <label for="soda" style="float: left;margin-right: 10px;font-weight: bolder;font-size: 1.2em;">Quantity:</label>
+            <select name="quantity" id="quantity" style="padding: 4px;margin-bottom: 70px;">
+              <option value="one">1</option>
+              <option label="two" value="2">2</option>
+              <option label="three" value="3">3</option>
+              <option label="four" value="4">4</option>
+              <option label="five" value="5">5</option>
+              <option label="six" value="6">6</option>
+              <option label="seven" value="7">7</option>
+              <option label="eight" value="8">8</option>
+              <option label="nine" value="9">9</option>
+            </select>
+          </div><br>
+          <a href="#top">
+          <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-bottom: 80px; float: left;">Add more foods</p></a>
+        <div>
+            <a href="#checkout">
+            <p style="font-size: 1em; color: white; font-family: 'Tahoma';border: 1px solid black; padding: 20px; border-radius: 5px ;background-color: rgb(54, 18, 18);
+             margin-left: 50px; float: left;">Check out</p></a>
+        </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="checkout">
+            <p style="font-size: 2em; color: black; font-family: 'Tahoma';border: 1px solid black; padding: 10px; border-radius: 5px ;background-color: rgb(198, 225, 245);
+            box-shadow: 1px 1px 2px 2px;" id="top">Check-out</p>
+        </div><br>
+        <hr width ="100%" size ="4" color="white">
+        <br><br><br><br><br><br><br><br><br>
+        <div>
+            <figure><img src="VERGARA_IMAGES_ITAD/delivery.png" style="margin-top: -110px;margin-left: 45px;width: 80px;height: 80px;margin-right: -300px;">
+                <figcaption style="float: left;margin-top: -70px;margin-left: 145px; margin-bottom: -100px;margin-right: -300px;"><input type="checkbox" name="Delivery" id="Delivery">
+                    <label for="Delivery">Delivery</label></figcaption>
+            </figure>
+            <br><br><br><br><br><br>
+            <figure><img src="VERGARA_IMAGES_ITAD/pickup.png" style=" margin-top: -100px;margin-left: 45px; width: 80px;height: 80px;margin-right: -400px;">
+                <figcaption style=" float: left;margin-top: -70px;margin-left: 145px;margin-bottom: -100px; margin-right: -300px;"><input type="checkbox" name="Pick-up" id="Pick-up">
+                    <label for="Pick-up">Pick-up</label></figcaption>
+            </figure>
+        </div>
+        <div>
+            <input type="submit" value="Place order">
+        </div><br><br><br><br><br><br>
+        <div>
+            <input type="reset" value="Reset order">
+        </div><br><br><br><br><br>
+    </fieldset>
+    </form>
+    </section>
+</ul>
+</body>
+</html>
